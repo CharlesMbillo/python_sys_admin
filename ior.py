@@ -20,18 +20,21 @@ def install_or_remove_packages():
         packages = "defaultPackages"
     
     if iOrR == "install":
-        os.system("sudo yum install " + packages)
+        os.system("sudo yum install " + packages + " -y")
 
     elif iOrR == "remove":
         while True:
-            print("Purge files after removing? (Y/N)")
-            choice = input().upper()
-            if choice == "Y":
-                os.system("sudo yum --purge " +iOrR + " " + packages)
-                break
-            elif choice == "N":
-                os.system("sudo yum " + iOrR + "" + packages)
-                break
-        os.system("sudo yum autoremove")
+            # print("Purge files after removing? (Y/N)")
+            # choice = input().upper()
+            # if choice == "Y":
+            #     os.system("sudo apt-get --purge " +iOrR + " " + packages)
+            #     break
+            # elif choice == "N":
+            #     os.system("sudo yum " + iOrR + "" + packages)
+                # break
+            os.system("sudo yum " + iOrR + "" + packages + " -y")
+            os.system("sudo yum autoremove")
+
+install_or_remove_packages()
 
 

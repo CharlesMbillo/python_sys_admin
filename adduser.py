@@ -19,6 +19,7 @@ def add_user(username, password):
         print(f"An error occurred: {e}")
 
 # Example usage
-username = "newuser"
+
+username = input("Enter username to add: ")
 password = "password123"
 add_user(username, password)
