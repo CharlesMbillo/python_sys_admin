@@ -34,7 +34,7 @@ def install_or_remove_packages():
             # elif choice == "N":
             #     os.system("sudo yum " + iOrR + "" + packages)
                 # break
-            os.system("sudo yum " + iOrR + "" + packages + " -y")
+            os.system("sudo yum " + iOrR + " " + packages + " -y")
             os.system("sudo yum autoremove")
             break
 
