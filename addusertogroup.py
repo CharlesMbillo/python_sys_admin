@@ -1,3 +1,6 @@
+### WORK-IN-PROGRESS
+### USE addtogroup.py
+
 #!/usr/bin/python3
 
 import os
