@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 
 def add_user():
