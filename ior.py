@@ -36,6 +36,7 @@ def install_or_remove_packages():
                 # break
             os.system("sudo yum " + iOrR + "" + packages + " -y")
             os.system("sudo yum autoremove")
+            break
 
 install_or_remove_packages()
 
